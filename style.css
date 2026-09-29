@@ -1,45 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fff8f0;
     font-family: Arial, sans-serif;
     color: #3b2720;
     line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-h1 {
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#main-header {
+    background-color: #f3d5b5;
+    text-align: center;
+}
+
+#page-title, h1 {
     font-size: 36px;
     font-weight: 700;
     color: #6b2d2d;
-    text-align: center;
+    margin-bottom: 15px;
 }
 
 h2 {
     font-size: 28px;
     font-weight: 700;
     color: #7b3f00;
-    text-align: left;
+    margin-bottom: 12px;
 }
 
 h3 {
     font-size: 22px;
     font-weight: 600;
     color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.section-title {
     text-align: left;
 }
 
-#main-header {
-    background-color: #f3d5b5;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+#main-header .section-title {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 12px;
 }
 
 .intro {
     font-size: 20px;
     font-style: italic;
     color: #6b2d2d;
+    margin-top: 15px;
 }
 
 strong {
@@ -60,12 +90,15 @@ em {
     font-weight: 600;
     display: block;
     width: fit-content;
+    margin-bottom: 12px;
 }
 
 a {
+    display: inline-block;
     color: #8b4513;
     text-decoration: none;
     font-weight: 600;
+    margin-top: 5px;
 }
 
 a:hover {
@@ -73,25 +106,64 @@ a:hover {
     text-decoration: underline;
 }
 
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #5c4033;
+}
+
 ul {
     list-style-type: square;
-    color: #5c4033;
 }
 
 ol {
     list-style-type: decimal;
-    color: #5c4033;
 }
 
 li {
     margin-bottom: 8px;
 }
 
-img {
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f3d5b5;
+    color: #6b2d2d;
+    font-weight: bold;
+}
+
+.main-img {
     width: 300px;
     height: 150px;
+    max-width: 100%;
     object-fit: cover;
-    margin: 15px 10px 15px 0;
+    margin: 15px auto;
     border-radius: 10px;
-    vertical-align: middle;
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin: 0;
 }
